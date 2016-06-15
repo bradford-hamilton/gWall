@@ -4,7 +4,7 @@ var knex = require('../db/knex');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  knex.table('posts').select().then(function(posts) {
+  knex.table('posts').select().orderBy('created_at', 'desc').then(function(posts) {
     res.render('gwall', {posts: posts});
   });
 });
