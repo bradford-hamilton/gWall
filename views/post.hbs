@@ -1,0 +1,18 @@
+
+<h2>What's on your mind?</h2>
+
+<form method='POST' action='/gwall/post'>
+  <fieldset class="form-group">
+    <label for="username">Username</label>
+    <input type="text" name='username' class="form-control" id="username" placeholder="Enter Username">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="image">Image URL</label>
+    <input type="text" name='image' class="form-control" id="image" placeholder="Enter Image URL">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="rant">Content</label>
+    <textarea class="form-control" name='rant' id="rant" rows="3"></textarea>
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

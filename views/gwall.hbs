@@ -1,2 +1,20 @@
-<h1>What's written, is written. What's not written, is not written. gWall</h1>
+<h1>gWall<h1>
+<h3>What's written, is written. What's not written, is not written. gWall.</h3>
 <br><br>
+<a href="/gwall/post">Add a post!</a>
+<br><br><br><br>
+
+<ul>
+  {{#each posts}}
+    <li>
+      <h3>{{this.username}}</h3>
+      <small>{{this.created_at}}</small>
+      <br>
+      <br>
+      <img src={{this.image}} alt='Image image should be here.'>
+      <br>
+      <p>{{this.rant}}</p>
+      <br><br><br><br><br>
+    </li>
+  {{/each}}
+</ul>
